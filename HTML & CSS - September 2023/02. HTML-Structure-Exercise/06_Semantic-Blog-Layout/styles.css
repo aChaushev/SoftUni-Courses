@@ -1,0 +1,62 @@
+body { 
+    background-color:#b7d7e8; 
+}
+
+#header {
+    border-radius: 3px;
+    padding: 8px;
+    background-color: #dceaf4;
+    border: 1px solid #bfcacb;
+    
+
+}
+
+header * { 	/*  '*' -> Selects all elements */
+    display: inline;
+    vertical-align: middle;
+}
+
+main section header {
+    margin: 10px;
+}
+
+nav ul {
+    /* list-style: none; */
+    margin: 0;
+    padding: 10px;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+section h2 {
+    margin: 10px ;
+}
+
+article {
+    display: table-cell; /* подрежда в табличен вид */
+    width: 50%; /* заема половината от ширината на полето */
+    padding: 10px;
+    background-color: #e5f0f7;
+    border: 10px solid #b7d7e8;
+
+}
+
+footer {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #dceaf4;
+    border: 1px solid #bfcacb;
+
+
+}
+
+footer p {
+    margin: 5px;
+}

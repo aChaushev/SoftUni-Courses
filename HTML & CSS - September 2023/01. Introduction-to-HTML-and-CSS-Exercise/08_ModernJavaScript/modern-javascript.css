@@ -1,0 +1,8 @@
+#wrapper {
+    background-color: #5bc0de;
+}
+span{
+    display:block;
+    width:100% /*or whatever width you want the effect of <hr>*/
+    border-top 1px solid #ccc
+ }

@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+}
+
+nav ul {
+    list-style: none; /* type="none" */
+    background-color: #444;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav li {
+    font-size: 24px; /* размер на шрифта */
+    line-height: 40px;
+    height: 40px;
+    padding: 20px;
+    display: inline-block; /* подрежда list items в една линия/ред */
+}
+
+nav a {
+    text-decoration: none; /* премахва underline na hyperlink-a */
+    color: #ffffff;     /* text color */
+}
