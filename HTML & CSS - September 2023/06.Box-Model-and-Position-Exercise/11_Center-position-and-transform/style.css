@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+}
+ 
+.card {
+    position: absolute;
+    width: 28em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3); 
+}
+
+.card .media {
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.card .media:after {
+    display: block;
+    content:'';
+    padding-top: 56.25%;  /*  9 / 16 * 100  */
+}
+
+.card .media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;  
+}
+
+.card .content {
+    padding: 2em;
+    padding-bottom: 5em;
+}
+
+.card h3 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+div p {
+    padding-bottom: 1.5em;  
+}
+
+.card .button {
+    display: block; 
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.6em 1em;
+    border-radius: 0.2em;
+    background-color: rgb(0, 153, 0); 
+}
+

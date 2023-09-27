@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div.viewport {
+    position: relative;
+    height: 50vh; /* запълва половината viewport-прозореца*/
+    
+}
+
+.viewport:nth-child(1){
+    background: rgb(9,67,121);
+    background: linear-gradient(90deg, rgba(9,67,121,1) 0%, rgba(0,255,175,1) 100%);
+}
+.viewport:nth-child(2){
+    background: rgb(121,9,84);
+    background: linear-gradient(90deg, rgba(121,9,84,1) 0%, rgba(255,183,0,1) 100%);
+}
+
+.viewport.portrait .card { 
+    /* задава размерите на контейнера */
+    /* width: auto; */
+    /* height: 80%; */
+}
+
+.viewport.portrait .card img {  
+    /* задава размерите на катинката */
+    /* width: auto; */
+    /* height: 100%; */
+}
+
+section.card {
+    position: absolute;
+    width: 30%;
+    max-height: 90%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 0.2em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.3); 
+}
+
+/* може и без .card::after и .card:hover::after */
+.card::after {
+    display: block;
+    content: '';
+    position: absolute;
+    inset: 0; /*за да стане голям колкото контейнера си */
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 5px 60px 5px rgba(0,0,0,0.75);
+    transition: opacity 0.3s ease-in; 
+}
+
+.card:hover::after {
+    opacity: 0;
+}
+
+.card img {
+    display: block;
+    position: relative;
+    width: 100%;    
+}
+
+.icons i {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    color: white;
+    font-size: 1em; 
+    z-index: 10; 
+}

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font: 16px/1.5 Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+/* ---------HEADER--------- */
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;  
+    margin: 1em 4em;
+}
+
+
+header {
+    position: relative;
+    flex-basis: 100%;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+header .site-title {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 700;
+    overflow: auto;
+}
+
+header nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 1.5em;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+
+/* ---------MAIN--------- */
+
+.page main {
+    flex: 1 1 35em; 
+    /* important */
+}
+
+h1, h2 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0.67em 0 0 0; 
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 0.83em 0 0 0;   
+}
+
+main p {
+    padding: 1em 0 1em 0;
+}
+
+article img {
+    display: block;
+    border: 3px solid #000;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.25);
+}
+
+article img.align-left {
+    float: left;  /* important */
+    margin: 0 1em 1em 0;
+}
+
+article img.align-right {
+    float: right;  /* important */
+    margin: 0 0 1em 1em;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    opacity: 0.5;
+    padding: 1em;
+    width: 40%;
+    float: right;
+    margin: 0 0 1em 1em;
+    font-style: italic;
+    border-left: 4px solid #bebebe; 
+}
+
+blockquote p:nth-child(2) {
+    text-align: right;
+}
+
+/* ---------ASIDE--------- */
+
+aside {
+    flex: 1 1 1em;
+    margin: 0 4em;
+}
+
+aside ul {
+    list-style: square;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+aside section h2 {
+    margin-left: -1.3em;
+    margin-bottom: 0.5em;
+}

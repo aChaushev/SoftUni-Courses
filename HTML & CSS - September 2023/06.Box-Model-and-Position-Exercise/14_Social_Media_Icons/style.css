@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+ul {
+    /* display: flex; */
+    /* gap: 1em; */
+    list-style: none;  
+}
+
+li {
+    display: inline-block;
+    margin: 0 0.5em; /* при flex с gap: 1em -> този margin отпада */
+}
+
+a {
+    padding: 0.8em;
+    background-color: #eee;
+    border-radius: 50%;
+    font-size: 1.2em;
+    color: #000;
+    transition: 
+        background-color 0.3s ease-in,
+        color 0.3s ease-in;
+}
+
+/* може и без a:hover */
+a:hover {
+    background-color: #000;
+}
+
+ul li:nth-child(1) a:hover {
+    color: rgb(75, 75, 228);
+}
+
+ul li:nth-child(2) a:hover {
+    color: rgb(108, 198, 228);
+}
+
+ul li:nth-child(3) a:hover {
+    color: rgb(180, 12, 12);
+}
+
+ul li:nth-child(4) a:hover {
+    color: rgb(55, 121, 207);
+}
+
+ul li:nth-child(5) a:hover {
+    color: rgb(212, 212, 212);
+}
+
