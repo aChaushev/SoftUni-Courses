@@ -1,0 +1,51 @@
+html {
+    font: 16px/1.4 Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    vertical-align: top;
+    /* font-size: 0; */
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+
+article {
+    display: inline-block;
+    width: 65%;
+    margin-top: 15px;
+    margin-left: 40px;
+
+}
+
+ul {
+    list-style: square;  
+}
+
+img {
+    width: 70%;
+}
+
+aside {
+    display: inline-block;
+    position: absolute;
+    top: 1.5em;
+    bottom: 0;
+  
+}
+
+aside ul {
+    text-indent: 20px;
+}
+
+aside a {
+    color: blue;
+}

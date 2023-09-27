@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap');
+
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 50px 70px;   
+}
+
+header > h1 {
+    display: inline-block;
+    font-size:42px;
+    margin-right: 50px;  
+}
+
+main > h1 {
+    font-family: 'Roboto Serif', serif;
+}
+
+nav {
+    display: inline-block;   
+}
+
+nav ul {
+    list-style: none; 
+}
+
+nav li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: green;
+}
+
+main article p {
+    letter-spacing: auto;
+    word-spacing: 0.1em;
+    line-height: 1.3em;
+}
