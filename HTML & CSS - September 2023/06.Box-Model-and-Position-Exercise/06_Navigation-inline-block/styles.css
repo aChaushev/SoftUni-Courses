@@ -12,7 +12,8 @@ header > h1 {
 }
 
 main > h1 {
-    font-family: 'Roboto Serif', serif;
+    font-family: Georgia, serif;
+    font-weight: 100;
 }
 
 nav {
