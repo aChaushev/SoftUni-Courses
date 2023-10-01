@@ -17,11 +17,14 @@
                 </a>
             </article>
             <article>
-                <h1 align="center">
+                <h2 align="center">
                     The repository stores my projects, homework, exercises, and educational materials created during
                     my studies
                     <a href="https://softuni.bg/" target="_blank">@SoftUni</a>
-                </h1>
+                </h2>
+                <h3 align="right">
+                    <a href="https://github.com/aChaushev" target="_blank"> by A.Chaushev</a>
+                </h3>
             </article>
         </section>
     </header>
