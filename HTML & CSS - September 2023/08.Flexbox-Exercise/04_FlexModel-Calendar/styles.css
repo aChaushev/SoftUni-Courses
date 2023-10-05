@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 3em 12em;
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    max-width: 65vw;
+}
+ 
+.week {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 15em;
+}
+
+.title,
+.day,
+.notes {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.title {
+    flex: 1 0 100%;
+}
+
+.day {
+      flex-grow: 1;
+}
+
+.notes {
+    flex-direction: column;
+    flex: 0 0 20%;
+}

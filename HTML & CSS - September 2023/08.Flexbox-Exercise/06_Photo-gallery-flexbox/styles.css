@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+body
+.gallery ul,
+.gallery li {
+    display: flex;
+}
+
+.gallery {
+    align-content: center;
+    margin: 2em;
+}
+
+.gallery ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;    
+}
+
+.gallery li {
+    flex-grow: 1;
+    flex: 0 0 auto;
+    align-items: center;
+    background-color: white;
+    border: 0.7em solid black;
+    padding: 2em 1.5em;
+    border-radius: 0.15em;
+    box-shadow: 
+        0 0 0.5em 0 rgba(0, 0, 0, 0.5) inset,
+        0 0 1em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.gallery li img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* object-fit: contain; */
+}
