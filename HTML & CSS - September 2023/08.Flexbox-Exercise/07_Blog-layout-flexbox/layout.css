@@ -1,0 +1,50 @@
+div.page {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;  
+    margin: 1em 4em;
+}
+
+.page > header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    flex-basis: 100%;
+}
+
+.page > main {
+    flex: 1 1 35em; /* important */
+}
+
+.page > aside {
+    flex: 1 1 1em;
+    margin: 0 4em;
+}
+
+
+.page h1 {
+    font-size: 2em;
+    padding: 0.67em 0 0 0;
+    font-weight: 100;
+}
+
+.page h2 {
+    font-size: 1.5em;
+    padding: 0.83em 0 0 0;
+    font-weight: 100;
+}
+
+main p {
+    padding: 1em 0 1em 0;
+}
+
+.page aside section h2 {
+    margin-left: -1.3em;
+}
+
+section  blockquote {
+    border-left: 4px solid #bebebe; 
+}
+
+blockquote p:nth-child(2) {
+    text-align: right;
+}

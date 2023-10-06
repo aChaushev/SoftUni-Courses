@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    font: 14px/1.5 Helvetica, sans-serif;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);  
+}
+
+header {
+    text-transform: uppercase;
+    font-size: 3em;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    font-weight: 700;
+    padding: 0.3em 0.7em;  
+}
+
+main, footer {
+    padding: 2em;
+}
+
+main {
+    flex-grow: 1;  
+}
+
+main h1 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    padding: 0.67em 0 0 0;
+    font-weight: 100;
+}
+
+main p {
+    padding: 1em 0 1em 0;
+}
+
+footer {
+    /* margin-top: auto; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);  
+}

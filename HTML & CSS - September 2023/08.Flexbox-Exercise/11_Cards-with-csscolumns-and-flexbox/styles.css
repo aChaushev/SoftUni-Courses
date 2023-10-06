@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 14px/1.5 Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 3em 10em;
+}
+
+/* -----------Layout Masonry-----------  */
+
+.cards-layout.masonary{
+    column-count: 3;
+    column-gap: 2em;   
+}
+
+.cards-layout.masonary .card {
+    display: inline-block;
+    margin: 0 0 1.5em;
+    width: auto; 
+}
+
+/* -----------Layout Flex-----------  */
+
+.cards-layout.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.cards-layout.flex .card {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 4.5em) / 3);
+}
+
+
+.cards-layout .card {
+    background-color: #fff;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.3);
+}
+
+section  {
+    padding: 1.5em; 
+}
+
+h1, h2, h3 {
+    font-weight: lighter;
+}
+
+body h2 {
+    margin: 1em 0;
+    font-family: Georgia, Times, serif;
+}
+
+.card section h3 {
+    font-size: 16px;
+}
+
+footer {
+    border-top: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    margin-top: auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* 🤝 Show your support - give a ⭐️ if you liked the content Follow me */
