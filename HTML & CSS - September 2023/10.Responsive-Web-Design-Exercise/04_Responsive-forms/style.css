@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 14px/1.5 Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    position: relative;
+    max-width: 28em;
+    margin: auto;
+    margin-top: 5em;
+    padding: 2rem 1.5rem;
+
+    border: 1px solid #AAA;
+    background-color: #f8f8f8;
+    border-radius: 0.25em;
+
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2); 
+}
+
+.container p:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transform: translate( 0, -50%);
+
+    border: 1px solid #AAA;
+    background-color: #f8f8f8;
+    border-radius: 0.25em;
+
+    width: 10em;
+    padding: 0.4em 0.7em;
+
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.5); 
+}
+
+.container p:nth-of-type(2) {
+    display: inline-block;
+    font-size: 0.8em;
+    width: fit-content;
+    
+    border-radius: 0.3em;
+    background-color: #000;
+    font-weight: bold;
+    padding: 0.5em 1.4em;   
+}
+
+.container p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 1em;
+    width: auto;
+}
+
+
+.form label {
+    font-weight: bold;  
+}
+
+.form .input-container {
+    position: relative;   
+}
+
+.form .input-container i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate( 50%, 50%);
+}
+
+
+.form div input[type="text"],
+.form div input[type="password"] {
+    border: 1px solid #CCC;
+    border-radius: 0.3em;
+    width: 100%;
+    padding: 0.5em;
+       
+}
+
+.form input:focus-within {
+    background: #ff8;
+    color: black;
+}
+
+
+
+@media screen and (width <= 500px) {
+    body {
+        font-size: 12px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (width > 500px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 2em 1em;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+}
+
+@media screen and (width > 800px) {
+    body {
+        font-size: 16px;
+    }
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        row-gap: 1em;
+        width: auto;
+    }
+
+
+}
+

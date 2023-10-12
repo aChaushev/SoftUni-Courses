@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px/1.5 Helvetica, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.page {
+    padding: 2em;
+}
+
+/* ---------HEADER--------- */
+
+header {
+    position: relative;
+    padding-bottom: 2em;
+    margin: 0 2em;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+header .site-title {
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    overflow: auto;
+}
+
+
+/* ---------MAIN--------- */
+
+.page main {
+    flex: 1 1 35em; 
+    /* important */
+    padding: 0 2em;
+    
+}
+
+h1, h2 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2em;
+    padding: 0.67em 0 0 0; 
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 0.83em 0 0 0;   
+}
+
+main p {
+    padding: 1em 0 1em 0;
+}
+
+article img {
+    display: block;
+    border: 3px solid #000;
+    background-color: rgb(255, 255, 255);
+    padding: 0.5em;
+    box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.25);
+}
+
+article img.align-left {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+article img.align-right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    opacity: 0.5;
+    padding: 1em;
+    width: 40%;
+    float: right;
+    margin: 0 0 1em 1em;
+    font-style: italic;
+    border-left: 4px solid #bebebe; 
+}
+
+blockquote p:nth-child(2) {
+    text-align: right;
+}
+
+
+/* ---------MEADIA QUERIES--------- */
+
+@media screen and (width <= 500px) {
+    .page {
+        font-size: 12px;
+        margin: 0; 
+    }
+
+    .page main article img {
+        float: none;
+        margin-left: 0;
+    }
+
+    blockquote {
+        width: auto;
+        float: none;
+    }
+}
+
+@media screen and (width > 500px) {
+    .page {
+        font-size: 14px;
+        margin: 0;
+        padding: 2em 1em;
+    }
+}
+
+@media screen and (width > 600px) {
+    .page {
+        font-size: 16px;
+        margin: 0;
+        padding: 2em 1em;
+    }
+}
+
+@media screen and (width > 800px) {
+    .page {
+        font-size: 18px;
+        margin: 0;
+        padding: 2em 1em;
+    }
+}
+
+@media screen and (width > 1300px) {
+    .page {
+        font-size: 21px;
+        margin: 2em 4em;
+    }
+}
+
+@media screen and (width > 1800px) {
+    .page { 
+        font-size: 23px;
+        margin: 2em 6em;
+    }
+}
