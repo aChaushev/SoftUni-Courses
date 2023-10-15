@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, table, input, button {
+    font: inherit;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+
+body {
+    margin: 2em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;  
+}
+
+
+@media screen and (width <= 500px) {
+
+    html {
+        font-size: 14px;
+        min-width: 300px; 
+    }
+
+    table {
+        border: 1px solid #d5d5d5;
+        border-bottom: 0;
+    }
+    
+    table thead {
+        border: none;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    table tbody tr:nth-child(2) {
+        background-color: #fff;
+    }
+    
+    table tr {
+        border-bottom: 1px solid #d5d5d5;
+        display: block;
+    }
+    
+    table td {
+        border-bottom: 1px solid #d5d5d5;
+        display: block;
+        padding: 0.4em;
+    }
+    
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        margin-right: 0.8em;
+    }
+    
+    table tr td:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+@media screen and (width > 500px) {
+    html {
+        font-size: 12px;
+    }
+
+    .responsive-mobile {
+        display: none;
+    }
+
+    table thead tr th,
+    table tbody tr td {
+    width: 30%;
+    border: 1px solid #d5d5d5;
+    padding: 0.4em;
+    text-align: left;
+}
+
+table thead tr th {
+    color: #fff;
+    background-color: #333333;  
+}
+
+table tbody tr:nth-child(2) {
+    background-color: #fff;
+}
+
+}
+
+
+@media (width > 600px) {
+    html { font-size: 14px; }
+}
+
+@media (width > 900px) {
+    html { font-size: 16px; }
+}
+
+@media (width > 1200px) {
+    html { font-size: 18px; }
+}
+
+@media (width > 1400px) {
+    html { font-size: 20px; }
+}
