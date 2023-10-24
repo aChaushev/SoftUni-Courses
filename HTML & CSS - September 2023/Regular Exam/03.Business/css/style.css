@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --white: #fff;
+    --brown-light: #B0825C;
+    --brown-text: #716567;
+    --gray-light: #DDDDDD;
+    --gray-light-hr: #CCCCCC;
+    --gray-footer-hr: #3A3A41;
+    --black-text: #37282B;
+    --black-background: #171720; 
+}
+
+/* ---------OVERALL--------- */
+
+body {
+    max-width: 1920px;
+    max-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+
+.hero-section .hero-main,
+[class*="section-"],
+.site-footer {
+    padding-inline: 222px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--gray-light-hr);
+}
+
+/* ---------HERO-SECTION - SITE-HEADER--------- */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 80px 35px 65px;  
+}
+
+.site-header .site-logo {
+    width: 110px;
+}
+
+.site-logo img {
+    object-fit: cover;
+}
+
+.site-nav {
+    list-style: none;
+    display: flex;
+    gap: 34px;
+}
+
+.site-nav li a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+/* ---------HERO-SECTION--------- */
+
+.hero-section {
+    width: 100%;
+    background: url(../images/background.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 285px;
+}
+
+.site .title.hero-title {
+    font-size: 3.45rem;
+    line-height: 1.25;
+}
+
+.hero-desc {
+    width: 55%;
+    padding-top: 20px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.hero-title {
+    margin: 0;
+}
+
+
+/* ---------SECTION-BUSINESS-OBJ--------- */
+
+.section-business-objectives {
+    display: flex;
+    color: var(--black-text);
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.business-box {
+    flex: 1 1 calc(50% - 25px);
+    padding-right: 40px;
+}
+
+.business-box .title-secondary {
+    font-size: 2.95rem;
+    margin-bottom: 14px;
+}
+
+.business-box .business-desc {
+    line-height: 1.8;
+    padding-bottom: 50px;
+}
+
+.business-box .btn-info {
+    all: unset;
+    border: 2px solid var(--brown-light);
+    color: var(--brown-light);
+    background-color: transparent;
+    font-weight: bold;
+    padding: 12px 26px;
+}
+
+
+/* ---------SECTION-SPONSORS--------- */
+
+.section-sponsor-partners {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+.sp-container:first-child {
+    padding-bottom: 45px;
+}
+
+.sp-container .title-sp {
+    font-size: 2.95rem;
+    margin-top: 55px;
+    /* margin-bottom: 14px; */
+    color: var(--brown-light);
+}
+
+.sp-container .sp-info {
+    color: var(--brown-text);
+}
+
+.sponsors-logo-container {
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+}
+
+.img-sp-container {
+    position: relative;
+    width: 185px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--gray-light);
+}
+
+.img-sp-container img {
+    position: absolute;
+    object-fit: cover;
+    width: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+
+/* ---------SECTION-CONTACTS--------- */
+
+.section-contacts {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 120px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    background-color: var(--black-background);
+    color: var(--white);
+}
+
+.contacts-box .title-contact {
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.contacts-box .contacts-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contacts-box .contacts-list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: 0.5;
+    font-size: 0.8rem;
+    line-height: 2.8; 
+}
+
+.hr-footer {
+    height: 1px;
+    background-color: var(--gray-footer-hr);
+}
+
+
+/* ---------SITE-FOOTER--------- */
+
+.site-footer {
+    background-color: var(--black-background);
+    padding-top: 20px;
+}
+
+.site-footer p {
+    font-size: 0.8rem;
+    color: var(--white);
+    opacity: 0.5;
+}
