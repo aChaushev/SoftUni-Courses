@@ -11,8 +11,8 @@ function motoGPRace(input) {
     for (let i = 0; i < racersCnt; i++) {
         const [rider, fuelCapacity, position] = input.shift().split('|');
         ridersList[rider] = {
-            fuelCapacity: parseFloat(fuelCapacity),
-            position: parseInt(position)
+            fuelCapacity: Number(fuelCapacity),
+            position: Number(position)
           };
     }
 
@@ -32,8 +32,8 @@ function motoGPRace(input) {
     })
 
     function stopForFuel(rider, minFuel, changedPosition) {
-        minFuel = parseFloat(minFuel);
-        changedPosition = parseInt(changedPosition);
+        minFuel = Number(minFuel);
+        changedPosition = Number(changedPosition);
             if (ridersList[rider].fuelCapacity < minFuel) {
                 ridersList[rider].fuelCapacity = 100;
                 ridersList[rider].position = changedPosition;
