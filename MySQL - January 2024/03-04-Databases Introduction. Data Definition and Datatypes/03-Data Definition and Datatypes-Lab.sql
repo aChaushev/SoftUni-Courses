@@ -1,35 +1,32 @@
 -- 01.	Create Tables	
-
 CREATE DATABASE `gamebar`;
 
-CREATE TABLE `gamebar`.`employees` (
+USE `gamebar`;
+
+CREATE TABLE `employees` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
     `first_name` VARCHAR(100) NOT NULL,
 	`last_name` VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE `gamebar`.`categories` (
+CREATE TABLE `categories` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(100) NOT NULL
 );
  
-CREATE TABLE `gamebar`.`products` (
+CREATE TABLE `products` (
 	`id` INT AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(100) NOT NULL,
     `category_id`INT NOT NULL
 );
 
 -- 2.	 Insert Data in Tables 
-
-USE `gamebar`;
-
 INSERT INTO `employees`(`first_name`, `last_name`) VALUES ("Dasha", "Masha");
 INSERT INTO `employees`(`first_name`, `last_name`) VALUES
 ("Pesho", "Gosho"),
 ("Sasho", "Tosho");
 
 -- 3. Alter Tables 
-
 ALTER TABLE `employees`
 ADD COLUMN `middle_name` VARCHAR(100);
 
