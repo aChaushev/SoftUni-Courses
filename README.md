@@ -83,7 +83,8 @@
                 <br />- Working with functions and expressions
                 <br />- Working with linear structures
                 <br />- Information extraction and manipulation of the DOM tree
-                <br />- Working with HTTP and REST
+                <br />- Working with HTTP Protocol, CRUD Operations, AJAX (Promises Basics, Fetch API), REST Services
+                <br />- Working with Front-end Framework: ReactJS /Essentials/
             </li>
               <hr>
           </ul>
