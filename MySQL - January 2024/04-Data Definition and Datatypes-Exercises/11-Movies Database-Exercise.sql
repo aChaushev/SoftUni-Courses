@@ -47,11 +47,11 @@ VALUES
 CREATE TABLE `movies` (
 `id` INT PRIMARY KEY AUTO_INCREMENT, 
 `title` VARCHAR(50) NOT NULL, 
-`director_id` INT, FOREIGN KEY (`director_id`) REFERENCES `directors` (`id`), 
+`director_id` INT, 
 `copyright_year` INT, 
 `length` DOUBLE, 
-`genre_id` INT , FOREIGN KEY (`genre_id`) REFERENCES `genres` (`id`), 
-`category_id` INT, FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`), 
+`genre_id` INT , 
+`category_id` INT,
 `rating` DOUBLE, 
 `notes` TEXT
 );
