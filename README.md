@@ -86,6 +86,16 @@
                 <br />- Working with HTTP Protocol, CRUD Operations, AJAX (Promises Basics, Fetch API), REST Services
                 <br />- Working with Front-end Framework: ReactJS /Essentials/
             </li>
+                <br>
+            <li>
+                <b>MySQL:</b>
+                <br />- Transaction Management
+                <br />- Utilizing the ACID Model
+                <br />- Database Operations
+                <br />- Relationship Management in Databases
+                <br />- Using Procedures and Functions
+                <br />- Creating Fundamental Back-End Architectures
+            </li>
               <hr>
           </ul>
           <h3 align="right">
