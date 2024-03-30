@@ -17,7 +17,6 @@ import java.nio.file.Path;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 @Service
@@ -86,7 +85,7 @@ public class VolcanoServiceImpl implements VolcanoService {
     public String exportVolcanoes() {
 
         List<Volcano> volcanoes = this.volcanoRepository.
-                findByActiveIsTrueAndElevationGreaterThanAndLastEruptionNotNullOrderByElevationDesc(3000);
+                findByisActiveIsTrueAndElevationGreaterThanAndLastEruptionNotNullOrderByElevationDesc(3000);
 
         return volcanoes
                 .stream()
